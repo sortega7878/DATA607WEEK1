@@ -1,6 +1,3 @@
-download.file('https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data', 'agaricus-lepiota.data')
-df <- read.table('agaricus-lepiota.data', sep=',', stringsAsFactors=FALSE)
-
 library(RCurl) 
 x <- getURL("https://raw.githubusercontent.com/sortega7878/DATA607WEEK1/master/agaricus-lepiota.data") 
 df <- read.csv(text = x)
